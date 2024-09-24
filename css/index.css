@@ -4,7 +4,8 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: navy;
+    /* background-color: navy; */
+    background-image: url('../image/back.jpg');
 }
 button{
     width: 100px;
@@ -27,7 +28,7 @@ button{
     border-radius: 15px;
     max-width: 500px;
     overflow: hidden;
-    border: 3px groove green;
+    /* border: 3px groove green; */
 }
 #display{
     width: 100%;
@@ -52,3 +53,24 @@ button:active{
 .operator-btn:active{
     background-color: rgb(240, 160, 240);
 }
+@media only screen and (max-width: 768px){
+    #calculator{
+       height: 450px;
+
+    }
+    #keys{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        padding: 15px;
+    }
+    button{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #484646;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+} 
