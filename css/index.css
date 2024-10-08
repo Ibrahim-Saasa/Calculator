@@ -53,6 +53,9 @@ button:active{
 .operator-btn:active{
     background-color: rgb(240, 160, 240);
 }
+.equal{
+    width: 100%;
+}
 @media only screen and (max-width: 768px){
     #calculator{
        height: 450px;
